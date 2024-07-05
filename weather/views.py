@@ -7,6 +7,9 @@ from .serializers import VisitorSerializer
 
 geoLocationService = settings.IP2LOCATION_API_KEY
 weatherAPiService = settings.OPENWEATHER_API_KEY
+from django.http import HttpResponse
+def welcome_view(request):
+    return HttpResponse("Welcome!!! add /api/hello/?visitor_name=yourname to ge the url for the api")
 
 class VisitorsView(generics.GenericAPIView):
     def get_user_ip(self, request):
