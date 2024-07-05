@@ -1,5 +1,4 @@
-
 .env
 db.sqlite3
-myenv/
+myenv
 vercel.json

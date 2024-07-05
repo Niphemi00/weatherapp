@@ -73,8 +73,8 @@ REST_FRAMEWORK = {
 ROOT_URLCONF = "weatherapp.urls"
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
-    "https://example.com",
-    "https://another-example.com",
+    "https://www.pythonanywhere.com",
+    'http://localhost:8000',
 ]
 
 TEMPLATES = [
